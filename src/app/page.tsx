@@ -3,7 +3,6 @@ import { redirect } from 'next/navigation';
 import BillboardHero from '@/components/sections/layouts/hero/BillboardHero';
 import BentoMediaGallery from '@/components/bento/BentoMediaGallery/BentoMediaGallery';
 import TextboxStandard from '@/components/textbox/TextboxStandard';
-import TextboxTaggable from '@/components/textbox/TextboxTaggable';
 import CentralFAQ from '@/components/sections/layouts/faq/CentralFAQ';
 import FooterBase from '@/components/footer/FooterBase';
 import { useEffect, useState } from 'react';
@@ -42,12 +41,12 @@ export default function Home() {
     <>
       <BillboardHero title="Futuristic Photography" subtitle="Explore stunning visuals from the future." />
       <BentoMediaGallery items={[
-        { title: 'Work 1', image: '/images/placeholder1.avif', description: 'Description 1' },
-        { title: 'Work 2', image: '/images/placeholder2.avif', description: 'Description 2' },
-        { title: 'Work 3', image: '/images/placeholder3.avif', description: 'Description 3' },
-        { title: 'Work 4', image: '/images/placeholder4.avif', description: 'Description 4' },
-        { title: 'Work 5', image: '/images/placeholder5.avif', description: 'Description 5' },
-        { title: 'Work 6', image: '/images/placeholder6.avif', description: 'Description 6' }
+        { title: 'Work 1', image: '/images/placeholder1.avif' },
+        { title: 'Work 2', image: '/images/placeholder2.avif' },
+        { title: 'Work 3', image: '/images/placeholder3.avif' },
+        { title: 'Work 4', image: '/images/placeholder4.avif' },
+        { title: 'Work 5', image: '/images/placeholder5.avif' },
+        { title: 'Work 6', image: '/images/placeholder6.avif' }
       ]} className="my-8" gridClassName="grid-cols-3 gap-4" />
       <TextboxStandard title={<h1 className='text-3xl font-semibold'>About the Photographer</h1>} description={<p className='text-lg'>With a passion for futuristic aesthetics, I captivate audiences through detailed visual narratives.</p>} />
       <CentralFAQ items={[
